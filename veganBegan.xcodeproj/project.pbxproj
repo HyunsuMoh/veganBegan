@@ -24,6 +24,8 @@
 		9A33890F264272A80025B252 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33890626426A110025B252 /* libxml2.tbd */; };
 		9A338910264272B10025B252 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33890726426A190025B252 /* libsqlite3.tbd */; };
 		9A524B27266DEC12002EEA66 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A524B26266DEC12002EEA66 /* PickerViewController.swift */; };
+		9ACCFC5A2675E08600654598 /* MapViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCFC592675E08600654598 /* MapViewDetail.swift */; };
+		D340C2E6390D6B0C53850C98 /* Pods_veganBegan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */; };
 		D82D3B77266CA03100A17C36 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D3B76266CA03100A17C36 /* Extension_UIView.swift */; };
 		F6EDF2542643119B001A924E /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDF22F2643119B001A924E /* map_pinup_custom@3x.png */; };
 		F6EDF2552643119B001A924E /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDF2302643119B001A924E /* map_pin_custom.png */; };
@@ -63,6 +65,7 @@
 		53B5A7B0A8DF0D297A0654E9 /* Pods-veganBegan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veganBegan.debug.xcconfig"; path = "Target Support Files/Pods-veganBegan/Pods-veganBegan.debug.xcconfig"; sourceTree = "<group>"; };
 		658D62D287F575280F714A5F /* Pods_veganBegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veganBegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2975F02675E03900EDC3F9 /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMDOHYEON_otf.otf; path = ../../../BMDOHYEON_otf.otf; sourceTree = "<group>"; };
+		644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veganBegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DC264266ED0025B252 /* veganBegan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veganBegan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DF264266ED0025B252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3388E1264266ED0025B252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 				9A338900264269E60025B252 /* SystemConfiguration.framework in Frameworks */,
 				F6EDF26F2643119B001A924E /* DaumMap.framework in Frameworks */,
 				9A3388FE264269DD0025B252 /* OpenGLES.framework in Frameworks */,
+				D340C2E6390D6B0C53850C98 /* Pods_veganBegan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +215,7 @@
 				9A338901264269ED0025B252 /* CoreLocation.framework */,
 				9A3388FF264269E60025B252 /* SystemConfiguration.framework */,
 				9A3388FD264269DD0025B252 /* OpenGLES.framework */,
+				644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
