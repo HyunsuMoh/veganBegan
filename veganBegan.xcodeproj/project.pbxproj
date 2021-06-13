@@ -128,6 +128,7 @@
 		F709397A2651108A007B179A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F721958A2650DEEB005D73A8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F721958B2650E07A005D73A8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		F7A2E2F72675E97C003CB84A /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		F7A8F8862666B7930009D5DB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +186,7 @@
 		9A3388DE264266ED0025B252 /* veganBegan */ = {
 			isa = PBXGroup;
 			children = (
+				F7A2E2F72675E97C003CB84A /* BMDOHYEON_otf.otf */,
 				F709397626510828007B179A /* GoogleService-Info.plist */,
 				9A3388DF264266ED0025B252 /* AppDelegate.swift */,
 				9A3388E1264266ED0025B252 /* SceneDelegate.swift */,
