@@ -73,7 +73,8 @@ class DatabaseManager {
         else {
             let queryResult = DatabaseManager.ref.child("restaurant").queryOrdered(byChild: "food").queryEqual(toValue: category)
             queryResult.observeSingleEvent(of: .value, with: {snapshot in
-                result = snapshot.value as! [[String: Any]]
+                let dictionary = snapshot.value as! [String: [String: Any]]
+                result.append(contentsOf: dictionary.values)
                 DispatchQueue.main.async {
                     completion(result)
                 }
@@ -101,31 +102,38 @@ class DatabaseManager {
         struct initialize {
             static var value = true
         }
+        let task: () -> Void = {
+            DatabaseManager.ref.child("restaurant").observeSingleEvent(of: .value, with: {snapshot in
+                let level_user = DatabaseManager.vegetarian_type.first(where: {item in (item["name"] as! String) == type})!["level"] as! Int
+                result = snapshot.value as! [[String: Any]]
+                /* remove restaurants that do not provide any foods the user can consume */
+                result.removeAll(where: {item in
+                    let level_item = DatabaseManager.vegetarian_type[item["type_min"] as! Int]["level"] as! Int
+                    return (level_item > level_user) || (level_item == level_user && (DatabaseManager.vegetarian_type[item["type_min"] as! Int]["name"] as! String) != type)
+                })
+                result.sort(by: {(a, b) in
+                    let level_a = DatabaseManager.vegetarian_type[a["type_max"] as! Int]["level"] as! Int
+                    let level_b = DatabaseManager.vegetarian_type[b["type_max"] as! Int]["level"] as! Int
+                    return level_a < level_b
+                })
+                DispatchQueue.main.async {
+                    completion(result)
+                }
+            })
+        }
+        
         if initialize.value {
             // fetch the vegetarian type info.
             let queryResult = DatabaseManager.ref.child("vege_type").queryOrdered(byChild: "level")
             queryResult.observeSingleEvent(of: .value, with: {snapshot in
                 DatabaseManager.vegetarian_type = snapshot.value as! [[String: Any]]
+                task()
             })
             initialize.value = false
         }
-        DatabaseManager.ref.child("restaurant").observeSingleEvent(of: .value, with: {snapshot in
-            let level_user = DatabaseManager.vegetarian_type.first(where: {item in (item["name"] as! String) == type})!["level"] as! Int
-            result = snapshot.value as! [[String: Any]]
-            /* remove restaurants that do not provide any foods the user can consume */
-            result.removeAll(where: {item in
-                let level_item = DatabaseManager.vegetarian_type[item["type_min"] as! Int]["level"] as! Int
-                return (level_item < level_user) || (level_item == level_user && (DatabaseManager.vegetarian_type[item["type_min"] as! Int]["name"] as! String) != type)
-            })
-            result.sort(by: {(a, b) in
-                let level_a = DatabaseManager.vegetarian_type[a["type_max"] as! Int]["level"] as! Int
-                let level_b = DatabaseManager.vegetarian_type[b["type_max"] as! Int]["level"] as! Int
-                return level_a < level_b
-            })
-            DispatchQueue.main.async {
-                completion(result)
-            }
-        })
+        else {
+            task()
+        }
     }
     
     static func updateRating(id: Int, rating: Int) {

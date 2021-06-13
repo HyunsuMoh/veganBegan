@@ -57,12 +57,6 @@ class MapViewController: UIViewController, MTMapViewDelegate {
                 self.view.sendSubviewToBack(mapView)
             })
         }
-        
-        //test
-        DatabaseManager.sortbyDistance(latitude: 37.5738835, longitude: 126.9831643, completion: {item in print(item.count)})
-        DatabaseManager.sortbyRating(completion: {item in print(item.count)})
-        //DatabaseManager.sortbyFoodCategory(category: "한식", completion: {item in print(item.count)})
-
     }
 
     func mapView(_ mapView: MTMapView!, updateCurrentLocation location: MTMapPoint!, withAccuracy accuracy: MTMapLocationAccuracy){
