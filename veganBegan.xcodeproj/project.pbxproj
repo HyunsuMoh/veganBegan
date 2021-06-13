@@ -21,9 +21,8 @@
 		9A33890E264272A10025B252 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33890526426A020025B252 /* libc++.tbd */; };
 		9A33890F264272A80025B252 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33890626426A110025B252 /* libxml2.tbd */; };
 		9A338910264272B10025B252 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33890726426A190025B252 /* libsqlite3.tbd */; };
-
 		9A524B27266DEC12002EEA66 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A524B26266DEC12002EEA66 /* PickerViewController.swift */; };
-
+		D340C2E6390D6B0C53850C98 /* Pods_veganBegan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */; };
 		D82D3B77266CA03100A17C36 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D3B76266CA03100A17C36 /* Extension_UIView.swift */; };
 		F6EDF2542643119B001A924E /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDF22F2643119B001A924E /* map_pinup_custom@3x.png */; };
 		F6EDF2552643119B001A924E /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDF2302643119B001A924E /* map_pin_custom.png */; };
@@ -61,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		53B5A7B0A8DF0D297A0654E9 /* Pods-veganBegan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veganBegan.debug.xcconfig"; path = "Target Support Files/Pods-veganBegan/Pods-veganBegan.debug.xcconfig"; sourceTree = "<group>"; };
+		644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veganBegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DC264266ED0025B252 /* veganBegan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veganBegan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DF264266ED0025B252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3388E1264266ED0025B252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +78,6 @@
 		9A33890626426A110025B252 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		9A33890726426A190025B252 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9A33890826426CDD0025B252 /* veganBegan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "veganBegan-Bridging-Header.h"; sourceTree = "<group>"; };
-
 		9A524B26266DEC12002EEA66 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		A7E002EA4B84443C7CBBF529 /* Pods-veganBegan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veganBegan.release.xcconfig"; path = "Target Support Files/Pods-veganBegan/Pods-veganBegan.release.xcconfig"; sourceTree = "<group>"; };
 		D82D3B76266CA03100A17C36 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 				9A338900264269E60025B252 /* SystemConfiguration.framework in Frameworks */,
 				F6EDF26F2643119B001A924E /* DaumMap.framework in Frameworks */,
 				9A3388FE264269DD0025B252 /* OpenGLES.framework in Frameworks */,
+				D340C2E6390D6B0C53850C98 /* Pods_veganBegan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,6 @@
 				9A3388EB264266EE0025B252 /* Assets.xcassets */,
 				9A3388ED264266EE0025B252 /* LaunchScreen.storyboard */,
 				9A3388F0264266EE0025B252 /* Info.plist */,
-				9ADC62EF266E08CE000E1749 /* BMDOHYEON_otf.otf */,
 				9A3388E8264266ED0025B252 /* veganBegan.xcdatamodeld */,
 				F709397A2651108A007B179A /* DatabaseManager.swift */,
 			);
@@ -208,6 +207,7 @@
 				9A338901264269ED0025B252 /* CoreLocation.framework */,
 				9A3388FF264269E60025B252 /* SystemConfiguration.framework */,
 				9A3388FD264269DD0025B252 /* OpenGLES.framework */,
+				644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,7 +357,6 @@
 				F6EDF26C2643119B001A924E /* map_present_background_update.png in Resources */,
 				F6EDF2682643119B001A924E /* map_present_direction.png in Resources */,
 				F6EDF2672643119B001A924E /* noimage256.png in Resources */,
-				9ADC62F0266E08CE000E1749 /* BMDOHYEON_otf.otf in Resources */,
 				F6EDF2562643119B001A924E /* shadow_balloon.png in Resources */,
 				9A3388EC264266EE0025B252 /* Assets.xcassets in Resources */,
 				F709397926510A24007B179A /* veganBegan.xcworkspace in Resources */,
