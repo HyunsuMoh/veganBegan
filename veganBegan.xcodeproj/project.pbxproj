@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80EF086566DFC5E749FFED20 /* Pods_veganBegan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658D62D287F575280F714A5F /* Pods_veganBegan.framework */; };
-		9A2975F12675E03A00EDC3F9 /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2975F02675E03900EDC3F9 /* BMDOHYEON_otf.otf */; };
 		9A3388E0264266ED0025B252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3388DF264266ED0025B252 /* AppDelegate.swift */; };
 		9A3388E2264266ED0025B252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3388E1264266ED0025B252 /* SceneDelegate.swift */; };
 		9A3388E4264266ED0025B252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3388E3264266ED0025B252 /* ViewController.swift */; };
@@ -63,8 +61,6 @@
 
 /* Begin PBXFileReference section */
 		53B5A7B0A8DF0D297A0654E9 /* Pods-veganBegan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veganBegan.debug.xcconfig"; path = "Target Support Files/Pods-veganBegan/Pods-veganBegan.debug.xcconfig"; sourceTree = "<group>"; };
-		658D62D287F575280F714A5F /* Pods_veganBegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veganBegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A2975F02675E03900EDC3F9 /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMDOHYEON_otf.otf; path = ../../../BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		644169371ECD3C69D3DC34FC /* Pods_veganBegan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veganBegan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DC264266ED0025B252 /* veganBegan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veganBegan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3388DF264266ED0025B252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,7 +193,6 @@
 				9A524B26266DEC12002EEA66 /* PickerViewController.swift */,
 				D82D3B76266CA03100A17C36 /* Extension_UIView.swift */,
 				9A3388EB264266EE0025B252 /* Assets.xcassets */,
-				9A2975F02675E03900EDC3F9 /* BMDOHYEON_otf.otf */,
 				9A3388ED264266EE0025B252 /* LaunchScreen.storyboard */,
 				9A3388F0264266EE0025B252 /* Info.plist */,
 				9A3388E8264266ED0025B252 /* veganBegan.xcdatamodeld */,
@@ -367,7 +362,6 @@
 				F6EDF26C2643119B001A924E /* map_present_background_update.png in Resources */,
 				F6EDF2682643119B001A924E /* map_present_direction.png in Resources */,
 				F6EDF2672643119B001A924E /* noimage256.png in Resources */,
-				9A2975F12675E03A00EDC3F9 /* BMDOHYEON_otf.otf in Resources */,
 				F6EDF2562643119B001A924E /* shadow_balloon.png in Resources */,
 				9A3388EC264266EE0025B252 /* Assets.xcassets in Resources */,
 				F709397926510A24007B179A /* veganBegan.xcworkspace in Resources */,

@@ -14,6 +14,7 @@ class MapViewDetail: UIViewController, MTMapViewDelegate {
     var mapView: MTMapView?
     var mapPoint: MTMapPoint?
     var poiItem1: MTMapPOIItem?
+    var list = [MTMapPOIItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,25 +27,24 @@ class MapViewDetail: UIViewController, MTMapViewDelegate {
             mapView.delegate = self
             mapView.baseMapType = .standard
             
-
-                poiItem1 = MTMapPOIItem()
+            DatabaseManager.sortbyFoodCategory(category: "한식", completion: {data in
+                /*poiItem1 = MTMapPOIItem()
                 poiItem1?.markerType = MTMapPOIItemMarkerType.redPin
                 poiItem1?.mapPoint = mapPoint
-                poiItem1?.itemName = "veganBegan!"
+                poiItem1?.itemName = "veganBegan!"*/
+                self.list.removeAll()
+                for i in 0...44 {
+                    self.list.append(self.poiItem(name: data[i]["name"] as! String, latitude: data[i]["Latitude"] as! Double, longitude: data[i]["Longitude"] as! Double))
+                }
                
-                mapView.add(poiItem1)
+                mapView.addPOIItems(self.list)
                 mapView.fitAreaToShowAllPOIItems()
                 
                 self.view.insertSubview(mapView, at: 0)
                 self.view.sendSubviewToBack(mapView)
-            }
+            })
+        }
         
-        /*
-        //test
-        DatabaseManager.sortbyDistance(latitude: 37.5738835, longitude: 126.9831643, completion: {item in print(item.count)})
-        DatabaseManager.sortbyRating(completion: {item in print(item.count)})
-        //DatabaseManager.sortbyFoodCategory(category: "한식", completion: {item in print(item.count)})
-*/
     }
 
     func mapView(_ mapView: MTMapView!, updateCurrentLocation location: MTMapPoint!, withAccuracy accuracy: MTMapLocationAccuracy){
