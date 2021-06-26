@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,7 +30,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemGreenColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vegan표지" translatesAutoresizingMaskIntoConstraints="NO" id="qJP-Xy-hEz">
@@ -38,7 +40,7 @@
                                     <constraint firstAttribute="width" constant="200" id="ikf-m4-lca"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-u0-6SE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-u0-6SE">
                                 <rect key="frame" x="52.5" y="370" width="270" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="Q6B-PW-HVk"/>
@@ -46,7 +48,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="23"/>
                                 <state key="normal" title="START" backgroundImage="rectangle">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
                                 <connections>
@@ -61,7 +63,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="23"/>
                                 <state key="normal" title="Information" backgroundImage="rectangle">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
                                 <connections>
@@ -76,7 +78,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="23"/>
                                 <state key="normal" title="my setting" backgroundImage="rectangle">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
                                 <connections>
@@ -84,6 +86,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="T5u-nI-wdZ"/>
                         <color key="backgroundColor" red="0.34620022773742676" green="0.73046368360519409" blue="0.66480487585067749" alpha="0.73729093309859151" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AfR-eF-u2V" firstAttribute="top" secondItem="T5u-nI-wdZ" secondAttribute="top" constant="50" id="466-WY-RQw"/>
@@ -97,7 +100,6 @@
                             <constraint firstItem="Ocz-qL-etd" firstAttribute="top" secondItem="e7f-OL-LLf" secondAttribute="bottom" constant="20" id="ubS-ue-p9k"/>
                             <constraint firstItem="e7f-OL-LLf" firstAttribute="top" secondItem="HZz-u0-6SE" secondAttribute="bottom" constant="20" id="zLe-zn-l2a"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="T5u-nI-wdZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nov-V0-LQm"/>
                 </viewController>
@@ -123,7 +125,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="페스코" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3j-OA-DkG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페스코" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3j-OA-DkG">
                                 <rect key="frame" x="40" y="100" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="SRT-wk-xKb"/>
@@ -279,6 +281,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="cCd-2Z-mO4"/>
                         <color key="backgroundColor" red="0.92076289653778076" green="0.96657603979110718" blue="0.93965035676956177" alpha="0.9999389648" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="35V-pd-bjz" firstAttribute="top" secondItem="b77-H5-b4k" secondAttribute="bottom" constant="20" id="Acm-sb-wdX"/>
@@ -304,7 +307,6 @@
                             <constraint firstItem="uhs-b6-cGn" firstAttribute="top" secondItem="cCd-2Z-mO4" secondAttribute="top" constant="20" id="tLF-Mo-58D"/>
                             <constraint firstItem="cQh-NZ-uyF" firstAttribute="leading" secondItem="cCd-2Z-mO4" secondAttribute="leading" constant="40" id="uCS-bH-XV7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cCd-2Z-mO4"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="CYj-yu-Zx7"/>
                     <navigationItem key="navigationItem" id="Pab-px-qij"/>
@@ -343,7 +345,7 @@
                                     <segment title=""/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHx-X8-44m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHx-X8-44m">
                                 <rect key="frame" x="190" y="212" width="35" height="686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="식당"/>
@@ -352,7 +354,8 @@
                                 <rect key="frame" x="40" y="180" width="334" height="437"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wSN-QC-dmD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AHx-X8-44m" firstAttribute="centerX" secondItem="1VP-e6-LMR" secondAttribute="centerX" id="92E-Tc-QBu"/>
                             <constraint firstItem="wSN-QC-dmD" firstAttribute="bottom" secondItem="3HM-rM-iW5" secondAttribute="bottom" constant="50" id="JXd-BT-o8r"/>
@@ -365,7 +368,6 @@
                             <constraint firstItem="3HM-rM-iW5" firstAttribute="leading" secondItem="wSN-QC-dmD" secondAttribute="leading" constant="40" id="pxT-sR-Pzg"/>
                             <constraint firstItem="wSN-QC-dmD" firstAttribute="trailing" secondItem="axa-qB-INV" secondAttribute="trailing" constant="40" id="zkE-fg-o3o"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wSN-QC-dmD"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mvZ-8U-eg2"/>
@@ -425,6 +427,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zQ7-oo-08d"/>
                         <color key="backgroundColor" red="0.9207947850227356" green="0.96662479639053345" blue="0.9396892786026001" alpha="0.9995727539" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dr2-JM-5Ao" firstAttribute="centerX" secondItem="SPc-1e-pfK" secondAttribute="centerX" id="0Nw-T7-dgn"/>
@@ -436,7 +439,6 @@
                             <constraint firstItem="9Xc-Rl-Nea" firstAttribute="centerX" secondItem="SPc-1e-pfK" secondAttribute="centerX" id="sGU-Op-Qi2"/>
                             <constraint firstItem="Dr2-JM-5Ao" firstAttribute="top" secondItem="9Xc-Rl-Nea" secondAttribute="bottom" constant="20" id="utZ-nf-lEq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zQ7-oo-08d"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="mPb-5u-IqB"/>
                 </viewController>
@@ -460,12 +462,12 @@
                                 </constraints>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mdz-2F-al2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Blj-VH-rcW" firstAttribute="centerX" secondItem="R8c-ux-Sw7" secondAttribute="centerX" id="ged-C8-pMu"/>
                             <constraint firstItem="Blj-VH-rcW" firstAttribute="top" secondItem="mdz-2F-al2" secondAttribute="top" constant="100" id="zgV-D9-9ZU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mdz-2F-al2"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Blj-VH-rcW"/>
@@ -557,7 +559,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-8e-6zZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-8e-6zZ">
                                 <rect key="frame" x="132.5" y="542" width="110" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="A3O-Po-26r"/>
@@ -565,7 +567,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="완료" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -606,6 +608,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Jg-rq-fh7"/>
                         <color key="backgroundColor" red="0.92069977521896362" green="0.96654945611953735" blue="0.93960243463516235" alpha="0.9991455078" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ke2-8e-6zZ" firstAttribute="centerX" secondItem="9f9-it-IfR" secondAttribute="centerX" id="B0s-k8-GeA"/>
@@ -619,7 +622,6 @@
                             <constraint firstItem="2vq-ZD-5CH" firstAttribute="centerX" secondItem="9f9-it-IfR" secondAttribute="centerX" id="p7i-AQ-wtc"/>
                             <constraint firstItem="Vjx-R8-tW4" firstAttribute="centerX" secondItem="9f9-it-IfR" secondAttribute="centerX" constant="70" id="pR2-GQ-4xa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Jg-rq-fh7"/>
                     </view>
                     <navigationItem key="navigationItem" id="CvD-i6-9rr"/>
                     <connections>
@@ -639,7 +641,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-Jp-7Iw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-Jp-7Iw">
                                 <rect key="frame" x="87.5" y="100" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mhw-iS-yym"/>
@@ -647,7 +649,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="카테고리" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -664,7 +666,7 @@
                                     <segue destination="nNS-6c-rIk" kind="show" id="j3f-1Y-3dc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-E5-0q0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-E5-0q0">
                                 <rect key="frame" x="87.5" y="180" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0sC-hL-Xa5"/>
@@ -672,7 +674,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="별점 순" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -686,7 +688,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-FC-NHX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-FC-NHX">
                                 <rect key="frame" x="87.5" y="260" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="l2c-O2-nEw"/>
@@ -694,7 +696,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="관련도 순" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -709,6 +711,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dg1-6k-dHQ"/>
                         <color key="backgroundColor" red="0.92071682214736938" green="0.96655672788619995" blue="0.93961530923843384" alpha="0.99935913089999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pvo-FC-NHX" firstAttribute="top" secondItem="dRQ-E5-0q0" secondAttribute="bottom" constant="30" id="9JP-sA-l2M"/>
@@ -718,7 +721,6 @@
                             <constraint firstItem="VhO-Jp-7Iw" firstAttribute="top" secondItem="dg1-6k-dHQ" secondAttribute="top" constant="100" id="YrO-GH-KKM"/>
                             <constraint firstItem="dRQ-E5-0q0" firstAttribute="centerX" secondItem="Ica-IN-RDa" secondAttribute="centerX" id="d2Z-rS-P6m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dg1-6k-dHQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="ewZ-b8-ZMa"/>
                     <navigationItem key="navigationItem" id="lDm-XR-sMb"/>
@@ -734,10 +736,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="No7-1Y-2ED">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eir-uD-7hV">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eir-uD-7hV" id="4et-ao-DYU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -756,15 +758,15 @@
             </objects>
             <point key="canvasLocation" x="2670" y="942"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter View Controller-->
         <scene sceneID="kCZ-XZ-Par">
             <objects>
-                <viewController id="nNS-6c-rIk" sceneMemberID="viewController">
+                <viewController id="nNS-6c-rIk" customClass="FilterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HW9-UR-Foh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-PV-Mja">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-PV-Mja">
                                 <rect key="frame" x="87.5" y="50" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NsS-gB-6jQ"/>
@@ -772,7 +774,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="한식" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -786,7 +788,7 @@
                                     <segue destination="ZX4-G6-GvC" kind="show" id="0J5-QI-u10"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puD-sV-aGb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puD-sV-aGb">
                                 <rect key="frame" x="87.5" y="115" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Eub-if-RTl"/>
@@ -794,7 +796,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="양식" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -804,8 +806,11 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="testHandler2" destination="nNS-6c-rIk" eventType="touchUpInside" id="HQj-Ge-BU7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qge-0n-r6f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qge-0n-r6f">
                                 <rect key="frame" x="87.5" y="180" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7bx-RN-OSr"/>
@@ -813,7 +818,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="일식" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -824,7 +829,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-Gc-fnF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-Gc-fnF">
                                 <rect key="frame" x="87.5" y="245" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="QAm-21-30x"/>
@@ -832,7 +837,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="중식" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -843,7 +848,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moe-V3-VlO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moe-V3-VlO">
                                 <rect key="frame" x="87.5" y="310" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="d7p-5L-n7f"/>
@@ -851,7 +856,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="카페" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -862,7 +867,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-8u-E5U">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-8u-E5U">
                                 <rect key="frame" x="87.5" y="375" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="LxT-XM-Hd4"/>
@@ -870,7 +875,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="분식" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -881,7 +886,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M41-At-Ktq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M41-At-Ktq">
                                 <rect key="frame" x="87.5" y="440" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ULj-1a-Mb4"/>
@@ -889,7 +894,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="기타" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -901,7 +906,8 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3Zj-bO-ck8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="puD-sV-aGb" firstAttribute="top" secondItem="Lh1-PV-Mja" secondAttribute="bottom" constant="15" id="0VN-eX-vO8"/>
                             <constraint firstItem="Qge-0n-r6f" firstAttribute="centerX" secondItem="HW9-UR-Foh" secondAttribute="centerX" id="1vD-YG-Bi9"/>
@@ -918,9 +924,11 @@
                             <constraint firstItem="moe-V3-VlO" firstAttribute="centerX" secondItem="HW9-UR-Foh" secondAttribute="centerX" id="mYu-aM-Rfh"/>
                             <constraint firstItem="0Uj-8u-E5U" firstAttribute="centerX" secondItem="HW9-UR-Foh" secondAttribute="centerX" id="zSX-wL-kHG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3Zj-bO-ck8"/>
                     </view>
                     <navigationItem key="navigationItem" id="n1y-l2-cDu"/>
+                    <connections>
+                        <outlet property="western" destination="puD-sV-aGb" id="KzI-4M-E0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZp-V9-pe4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -934,7 +942,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0e-gI-WGW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0e-gI-WGW">
                                 <rect key="frame" x="102.5" y="100" width="170" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="W8R-zo-NkH"/>
@@ -942,13 +950,13 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="식당1" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="ak7-l7-nf6" kind="show" id="VNf-Dn-MLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I9-7Y-E7T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I9-7Y-E7T">
                                 <rect key="frame" x="102.5" y="190" width="170" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="FHX-HB-1aH"/>
@@ -956,18 +964,18 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="식당2" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4ga-zW-caD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="a0e-gI-WGW" firstAttribute="top" secondItem="4ga-zW-caD" secondAttribute="top" constant="100" id="Ruo-xk-sfa"/>
                             <constraint firstItem="a0e-gI-WGW" firstAttribute="centerX" secondItem="fia-SS-Jj1" secondAttribute="centerX" id="kU1-J8-nkv"/>
                             <constraint firstItem="5I9-7Y-E7T" firstAttribute="top" secondItem="a0e-gI-WGW" secondAttribute="bottom" constant="20" id="sCw-Uw-QpE"/>
                             <constraint firstItem="5I9-7Y-E7T" firstAttribute="centerX" secondItem="fia-SS-Jj1" secondAttribute="centerX" id="wYg-EL-cWh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4ga-zW-caD"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="FdP-bl-GSd"/>
                 </viewController>
@@ -996,7 +1004,8 @@
                                 <rect key="frame" x="40" y="180" width="334" height="437"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wwq-6h-zJF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5UL-K3-clP" firstAttribute="leading" secondItem="wwq-6h-zJF" secondAttribute="leading" constant="40" id="0wO-8J-kZT"/>
                             <constraint firstItem="W6b-zs-dmC" firstAttribute="top" secondItem="wwq-6h-zJF" secondAttribute="top" constant="30" id="5rU-IB-5hA"/>
@@ -1006,7 +1015,6 @@
                             <constraint firstItem="5UL-K3-clP" firstAttribute="top" secondItem="W6b-zs-dmC" secondAttribute="bottom" constant="100" id="bhY-1o-Nfb"/>
                             <constraint firstItem="wwq-6h-zJF" firstAttribute="trailing" secondItem="5UL-K3-clP" secondAttribute="trailing" constant="40" id="fMp-6t-G3m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wwq-6h-zJF"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="5UL-K3-clP"/>
@@ -1096,7 +1104,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai4-Fl-BoD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai4-Fl-BoD">
                                 <rect key="frame" x="223" y="310" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1125,7 +1133,7 @@
                                     <constraint firstAttribute="width" constant="240" id="N8T-BW-fnu"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5Y-dg-S2i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5Y-dg-S2i">
                                 <rect key="frame" x="223" y="230" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1148,7 +1156,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="u4E-ny-8vr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tfv-Dc-j1i" firstAttribute="top" secondItem="9Sd-VS-7o6" secondAttribute="bottom" constant="10" id="Aed-ru-ocZ"/>
                             <constraint firstItem="u4E-ny-8vr" firstAttribute="trailing" secondItem="E5Y-dg-S2i" secondAttribute="trailing" constant="30" id="BMl-kF-uO4"/>
@@ -1167,7 +1176,6 @@
                             <constraint firstItem="Ai4-Fl-BoD" firstAttribute="top" secondItem="Thw-kO-gU9" secondAttribute="bottom" constant="10" id="tBe-QK-4KK"/>
                             <constraint firstItem="u4E-ny-8vr" firstAttribute="trailing" secondItem="Ai4-Fl-BoD" secondAttribute="trailing" constant="30" id="vhD-Md-xcQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="u4E-ny-8vr"/>
                     </view>
                     <navigationItem key="navigationItem" id="FMe-0V-PZa"/>
                 </viewController>
@@ -1184,63 +1192,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQq-EF-8Lh">
-                                <rect key="frame" x="162.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RKI-8u-aGr"/>
                                     <constraint firstAttribute="height" constant="50" id="UIj-zl-N8n"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="3" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkb-JK-ibR">
-                                <rect key="frame" x="102.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="102.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Nlx-cH-Hmf"/>
                                     <constraint firstAttribute="height" constant="50" id="qeC-jM-Cg8"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="2" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBy-NG-aTS">
-                                <rect key="frame" x="222.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="222.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="F6Q-o5-78T"/>
                                     <constraint firstAttribute="width" constant="50" id="ml3-6g-6ST"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="4" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qro-4E-wuc">
-                                <rect key="frame" x="282.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="282.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3e7-qS-ivO"/>
                                     <constraint firstAttribute="width" constant="50" id="Evf-Dz-WjA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="5" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-ID-1IO">
-                                <rect key="frame" x="42.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="42.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="e19-4T-UJo"/>
                                     <constraint firstAttribute="height" constant="50" id="jhk-WU-tGt"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="1" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="B5v-dz-n9M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UQq-EF-8Lh" firstAttribute="leading" secondItem="Rkb-JK-ibR" secondAttribute="trailing" constant="10" id="8Gv-fi-CSG"/>
                             <constraint firstItem="Qro-4E-wuc" firstAttribute="leading" secondItem="OBy-NG-aTS" secondAttribute="trailing" constant="10" id="DrV-aA-iwH"/>
@@ -1253,7 +1262,6 @@
                             <constraint firstItem="XiU-ID-1IO" firstAttribute="centerY" secondItem="Ez4-gg-6cT" secondAttribute="centerY" id="f18-9w-VC6"/>
                             <constraint firstItem="UQq-EF-8Lh" firstAttribute="centerY" secondItem="Ez4-gg-6cT" secondAttribute="centerY" id="t3S-VD-GG5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="B5v-dz-n9M"/>
                     </view>
                     <navigationItem key="navigationItem" id="UqE-1Q-3J3"/>
                 </viewController>
@@ -1269,7 +1277,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwC-Td-w5a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwC-Td-w5a">
                                 <rect key="frame" x="102.5" y="100" width="170" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="HeP-i0-fUJ"/>
@@ -1277,13 +1285,13 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="거북이집" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="g0Z-PC-BdX" kind="show" id="ad6-qi-nVG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjQ-Ua-CEL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjQ-Ua-CEL">
                                 <rect key="frame" x="102.5" y="190" width="170" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3ZW-cv-w0t"/>
@@ -1291,21 +1299,21 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
                                 <state key="normal" title="구내식당" backgroundImage="rectangle">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="CIV-PS-QSh" kind="show" id="Rrv-lD-A8U"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7w1-Jh-Ewk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pjQ-Ua-CEL" firstAttribute="top" secondItem="XwC-Td-w5a" secondAttribute="bottom" constant="20" id="5YQ-PA-6vf"/>
                             <constraint firstItem="XwC-Td-w5a" firstAttribute="top" secondItem="7w1-Jh-Ewk" secondAttribute="top" constant="100" id="7ew-4a-d1w"/>
                             <constraint firstItem="pjQ-Ua-CEL" firstAttribute="centerX" secondItem="rjn-dz-FLB" secondAttribute="centerX" id="Zm8-Nu-b14"/>
                             <constraint firstItem="XwC-Td-w5a" firstAttribute="centerX" secondItem="rjn-dz-FLB" secondAttribute="centerX" id="vA9-zc-Akz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7w1-Jh-Ewk"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="oWp-gd-xcp"/>
                 </viewController>
@@ -1335,7 +1343,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dYd-NL-kH6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kP7-r3-SZO" firstAttribute="top" secondItem="dYd-NL-kH6" secondAttribute="top" constant="100" id="J1a-pP-3PK"/>
                             <constraint firstItem="kP7-r3-SZO" firstAttribute="centerX" secondItem="Poj-04-7z2" secondAttribute="centerX" id="Uqp-vd-rTL"/>
@@ -1344,7 +1353,6 @@
                             <constraint firstItem="Ugr-2b-XMe" firstAttribute="leading" secondItem="dYd-NL-kH6" secondAttribute="leading" constant="20" id="vgI-No-LeF"/>
                             <constraint firstItem="Ugr-2b-XMe" firstAttribute="top" secondItem="dYd-NL-kH6" secondAttribute="top" constant="100" id="y8M-hg-tBO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dYd-NL-kH6"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kP7-r3-SZO"/>
@@ -1425,7 +1433,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfc-mA-FuJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfc-mA-FuJ">
                                 <rect key="frame" x="223" y="230" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1447,7 +1455,7 @@
                                     <segue destination="JJ4-bD-kfG" kind="show" id="hlc-eY-Q5A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-0s-My2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-0s-My2">
                                 <rect key="frame" x="223" y="310" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1487,7 +1495,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lUr-Va-8xZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lUr-Va-8xZ" firstAttribute="trailing" secondItem="Wdf-0s-My2" secondAttribute="trailing" constant="30" id="1k3-fV-Hys"/>
                             <constraint firstItem="Wdf-0s-My2" firstAttribute="top" secondItem="oJt-3l-4AG" secondAttribute="bottom" constant="10" id="3HL-O8-UdS"/>
@@ -1510,7 +1519,6 @@
                             <constraint firstItem="nOV-V7-QOe" firstAttribute="leading" secondItem="lUr-Va-8xZ" secondAttribute="leading" constant="30" id="qxM-N6-kk5"/>
                             <constraint firstItem="Idq-vo-giB" firstAttribute="leading" secondItem="lUr-Va-8xZ" secondAttribute="leading" constant="30" id="zGy-M6-9Vc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lUr-Va-8xZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="hgC-2h-58e"/>
                 </viewController>
@@ -1527,63 +1535,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsl-WD-Br6">
-                                <rect key="frame" x="162.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="gQB-ak-cJv"/>
                                     <constraint firstAttribute="height" constant="50" id="vYO-JG-OTk"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="3" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7f-Pk-UW2">
-                                <rect key="frame" x="102.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="102.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="efS-li-Qhw"/>
                                     <constraint firstAttribute="height" constant="50" id="y3Y-Yc-PwN"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="2" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgL-Pt-PgU">
-                                <rect key="frame" x="222.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="222.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2ht-wX-EDy"/>
                                     <constraint firstAttribute="width" constant="50" id="b6u-NY-VFK"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="4" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFA-4P-UXR">
-                                <rect key="frame" x="282.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="282.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Kmf-u2-r3g"/>
                                     <constraint firstAttribute="height" constant="50" id="fs5-SU-vZk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="5" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW5-KG-5PW">
-                                <rect key="frame" x="42.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="42.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="GaZ-TT-vhh"/>
                                     <constraint firstAttribute="height" constant="50" id="tiE-j5-WM8"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="1" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aqk-gc-41K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fgL-Pt-PgU" firstAttribute="centerY" secondItem="BUQ-bp-M4i" secondAttribute="centerY" id="4sy-lh-SUK"/>
                             <constraint firstItem="UW5-KG-5PW" firstAttribute="centerY" secondItem="BUQ-bp-M4i" secondAttribute="centerY" id="5qC-Bi-U8r"/>
@@ -1596,7 +1605,6 @@
                             <constraint firstItem="J7f-Pk-UW2" firstAttribute="leading" secondItem="UW5-KG-5PW" secondAttribute="trailing" constant="10" id="feW-7n-7FJ"/>
                             <constraint firstItem="bsl-WD-Br6" firstAttribute="centerX" secondItem="BUQ-bp-M4i" secondAttribute="centerX" id="vwi-57-sh0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aqk-gc-41K"/>
                     </view>
                     <navigationItem key="navigationItem" id="7iF-hI-NLt"/>
                 </viewController>
@@ -1626,7 +1634,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7Oo-Vf-xJT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7Oo-Vf-xJT" firstAttribute="trailing" secondItem="BPN-UX-N9s" secondAttribute="trailing" constant="20" id="4hX-ec-mlZ"/>
                             <constraint firstItem="BPN-UX-N9s" firstAttribute="leading" secondItem="7Oo-Vf-xJT" secondAttribute="leading" constant="20" id="962-hn-ox9"/>
@@ -1635,7 +1644,6 @@
                             <constraint firstItem="BPN-UX-N9s" firstAttribute="centerX" secondItem="NHp-Ah-nYA" secondAttribute="centerX" id="qgB-5d-7x4"/>
                             <constraint firstItem="BPN-UX-N9s" firstAttribute="top" secondItem="7Oo-Vf-xJT" secondAttribute="top" constant="100" id="vdt-9J-5Lw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Oo-Vf-xJT"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="2w7-u9-m66"/>
@@ -1716,7 +1724,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-9r-zdW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-9r-zdW">
                                 <rect key="frame" x="223" y="230" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1738,7 +1746,7 @@
                                     <segue destination="ECO-Ss-XDd" kind="show" id="NS4-eW-3z4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR2-L0-DFG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR2-L0-DFG">
                                 <rect key="frame" x="223" y="310" width="122" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1768,7 +1776,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sFX-In-gTF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sFX-In-gTF" firstAttribute="trailing" secondItem="Zh8-9r-zdW" secondAttribute="trailing" constant="30" id="0Dj-Fo-2Ot"/>
                             <constraint firstItem="VyU-AP-0o7" firstAttribute="top" secondItem="sFX-In-gTF" secondAttribute="top" constant="30" id="4mm-u8-A7N"/>
@@ -1789,7 +1798,6 @@
                             <constraint firstItem="eWB-RF-cl2" firstAttribute="top" secondItem="gfL-0p-gYN" secondAttribute="bottom" constant="10" id="qlA-qc-wmR"/>
                             <constraint firstItem="sFX-In-gTF" firstAttribute="trailing" secondItem="hR2-L0-DFG" secondAttribute="trailing" constant="30" id="yNx-Bo-ImV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sFX-In-gTF"/>
                     </view>
                     <navigationItem key="navigationItem" id="KNc-Iy-XvI"/>
                 </viewController>
@@ -1806,63 +1814,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5b-E6-Yob">
-                                <rect key="frame" x="162.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="J00-Sd-4Lm"/>
                                     <constraint firstAttribute="height" constant="50" id="VuM-CA-W9U"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="3" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kM-pL-DHv">
-                                <rect key="frame" x="102.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="102.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="M6n-Br-sre"/>
                                     <constraint firstAttribute="height" constant="50" id="SpE-rp-yTI"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="2" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-to-8P4">
-                                <rect key="frame" x="222.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="222.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="HEh-Dc-6gx"/>
                                     <constraint firstAttribute="height" constant="50" id="KIr-Ke-54K"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="4" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWU-0b-jYd">
-                                <rect key="frame" x="282.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="282.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4xS-ub-Xgo"/>
                                     <constraint firstAttribute="width" constant="50" id="bZd-u5-E3j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="5" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-pE-pcs">
-                                <rect key="frame" x="42.5" y="298.5" width="50" height="50"/>
+                                <rect key="frame" x="42.5" y="298" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="D7m-Rq-Hhl"/>
                                     <constraint firstAttribute="height" constant="50" id="fnl-Mu-e8Z"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="1" backgroundImage="star" catalog="system">
                                     <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5BE-Yl-nXe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RWU-0b-jYd" firstAttribute="leading" secondItem="hXf-to-8P4" secondAttribute="trailing" constant="10" id="3Tk-0x-Lbx"/>
                             <constraint firstItem="4wa-pE-pcs" firstAttribute="centerY" secondItem="puW-Pv-nUf" secondAttribute="centerY" id="Oha-Uq-wia"/>
@@ -1875,7 +1884,6 @@
                             <constraint firstItem="hXf-to-8P4" firstAttribute="leading" secondItem="c5b-E6-Yob" secondAttribute="trailing" constant="10" id="nh8-lc-F6f"/>
                             <constraint firstItem="hXf-to-8P4" firstAttribute="centerY" secondItem="puW-Pv-nUf" secondAttribute="centerY" id="tZD-fe-pZq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5BE-Yl-nXe"/>
                     </view>
                     <navigationItem key="navigationItem" id="ckm-Ja-Wsn"/>
                 </viewController>
@@ -1887,13 +1895,28 @@
     <resources>
         <image name="GoldStarFilled" width="53" height="51"/>
         <image name="rectangle" width="243" height="141"/>
-        <image name="star" catalog="system" width="64" height="58"/>
-        <image name="vegan표지" width="1000" height="900"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="vegan표지" width="500" height="450"/>
         <image name="거북이집_사진" width="1318" height="970"/>
         <image name="거북이집_지도" width="2268" height="1210"/>
         <image name="구내식당_사진" width="1732" height="1120"/>
         <image name="구내식당_지도" width="1752" height="984"/>
-        <image name="동물복지" width="1042" height="1048"/>
+        <image name="동물복지" width="347.33334350585938" height="349.33334350585938"/>
         <image name="온실가스" width="280" height="201.33332824707031"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
